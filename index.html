@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Los Cafeteros · Selección Colombia</title>
+  <meta name="description" content="La historia de la Selección Colombia: Copa América, Mundiales, leyendas y trivia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="colombia.css">
+</head>
+<body>
+  <header class="barra">
+    <a class="marca" href="#inicio">Los Cafeteros</a>
+    <nav aria-label="Principal">
+      <a href="#historia">Historia</a>
+      <a href="#trivia">Trivia</a>
+      <a href="#leyendas">Leyendas</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="wrap">
+        <p class="chico">Selección Colombia de fútbol</p>
+        <h1>Los<br>Cafeteros</h1>
+        <p class="lead">Del 5-0 en Buenos Aires a los octavos del Mundial 2026: la historia de la Tricolor en una sola página.</p>
+        <dl class="marcador">
+          <div><dt>Mundial 2026</dt><dd>Octavos de final</dd></div>
+          <div><dt>Copa América 2024</dt><dd>Subcampeón</dd></div>
+          <div><dt>Copa América 2001</dt><dd>Campeón</dd></div>
+        </dl>
+        <button id="gol" class="gol" type="button">¡Gol de Colombia! <span id="golN" aria-live="polite">0</span></button>
+      </div>
+    </section>
+
+    <section id="historia" class="seccion azul">
+      <div class="wrap">
+        <h2>Historia en fechas</h2>
+        <div id="anios" class="anios" role="tablist" aria-label="Años importantes"></div>
+        <article id="hito" class="hito" role="tabpanel" aria-live="polite"></article>
+      </div>
+    </section>
+
+    <section id="trivia" class="seccion rojo">
+      <div class="wrap">
+        <h2>¿Cuánto sabes de la Selección?</h2>
+        <div id="quiz" class="quiz"></div>
+      </div>
+    </section>
+
+    <section id="leyendas" class="seccion claro">
+      <div class="wrap">
+        <h2>Nombres que hicieron historia</h2>
+        <ul class="leyendas">
+          <li><strong>Carlos Valderrama</strong><span>Mediocampista, el “Pibe”: cerebro del equipo de los 90.</span></li>
+          <li><strong>René Higuita</strong><span>Arquero famoso por el “escorpión” y por jugar con los pies.</span></li>
+          <li><strong>Freddy Rincón</strong><span>Marcó el gol del empate ante Alemania en Italia 1990.</span></li>
+          <li><strong>Faustino Asprilla</strong><span>Delantero del 5-0 a Argentina en 1993.</span></li>
+          <li><strong>Radamel Falcao</strong><span>Uno de los máximos goleadores de la historia de la Selección.</span></li>
+          <li><strong>James Rodríguez</strong><span>Goleador del Mundial 2014 y capitán en el Mundial 2026.</span></li>
+          <li><strong>Luis Díaz</strong><span>Extremo y referente del equipo en los últimos años.</span></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Página hecha por un hincha. No es un sitio oficial ni está afiliado a la Federación Colombiana de Fútbol.</p>
+    </div>
+  </footer>
+
+  <script src="colombia.js"></script>
+</body>
+</html>
