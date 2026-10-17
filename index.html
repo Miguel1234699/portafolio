@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Miguel Tenorio · Portafolio</title>
+  <meta name="description" content="Portafolio de Miguel Tenorio, estudiante de Ingeniería de Sistemas en Bogotá.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <a class="logo" href="#inicio">MT</a>
+    <nav aria-label="Principal">
+      <a href="#hacer">Lo que hago</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <button id="tema" class="icono" type="button" aria-label="Cambiar entre tema claro y oscuro">◐</button>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <p class="intro">Hola, soy</p>
+      <h1>Miguel<br>Tenorio</h1>
+      <p class="lead">Estudiante de Ingeniería de Sistemas en Bogotá. Construyo páginas web y doy soporte técnico, y también me formo en el mundo de la farmacia.</p>
+      <div class="acciones">
+        <a class="btn" href="#proyectos">Ver proyectos</a>
+        <a class="btn sec" href="#contacto">Escríbeme</a>
+      </div>
+    </section>
+
+    <section id="hacer" class="bloque">
+      <h2>Lo que hago</h2>
+      <div class="tabs" role="tablist" aria-label="Áreas">
+        <button role="tab" aria-selected="true" aria-controls="p-sistemas" id="t-sistemas">Sistemas</button>
+        <button role="tab" aria-selected="false" aria-controls="p-farmacia" id="t-farmacia" tabindex="-1">Farmacia</button>
+        <button role="tab" aria-selected="false" aria-controls="p-coord" id="t-coord" tabindex="-1">Coordinación</button>
+      </div>
+      <div id="p-sistemas" role="tabpanel" aria-labelledby="t-sistemas">
+        <p>Estudio Ingeniería de Sistemas en la Universidad Libre. Hago sitios con HTML, CSS y JavaScript y doy soporte técnico a equipos y usuarios.</p>
+      </div>
+      <div id="p-farmacia" role="tabpanel" aria-labelledby="t-farmacia" hidden>
+        <p>Me formo como Auxiliar de Farmacia. Aprendo a dispensar, aprovisionar y distribuir medicamentos siguiendo las normas de competencia laboral.</p>
+      </div>
+      <div id="p-coord" role="tabpanel" aria-labelledby="t-coord" hidden>
+        <p>Coordino y superviso servicios en propiedad horizontal: atención a clientes, soporte técnico y reportes semanales de mantenimiento.</p>
+      </div>
+    </section>
+
+    <section id="proyectos" class="bloque">
+      <h2>Proyectos</h2>
+      <ul class="lista">
+        <li>
+          <h3>Sitio web de A&amp;M PH LTDA</h3>
+          <p>Página de una empresa de administración de propiedad horizontal.</p>
+          <p class="meta">HTML, CSS, JavaScript · <a href="https://amphltda.netlify.app" target="_blank" rel="noopener">Ver sitio</a></p>
+        </li>
+        <li>
+          <h3>Capuccino al Paso</h3>
+          <p>Aplicación web de un solo archivo para organizar las rutas de una distribuidora de café.</p>
+          <p class="meta">HTML, CSS, JavaScript</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contacto" class="bloque">
+      <h2>Contacto</h2>
+      <form id="form" novalidate>
+        <label>Nombre
+          <input name="nombre" type="text" autocomplete="name" required>
+        </label>
+        <label>Mensaje
+          <textarea name="mensaje" rows="4" required></textarea>
+        </label>
+        <button class="btn" type="submit">Enviar por correo</button>
+        <p id="estado" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="anio"></span> Miguel Tenorio · Bogotá, Colombia</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
